@@ -3,4 +3,4 @@ declare module "*.module.css" {
 	export default classes;
 }
 
-declare module "hero/ProductHero"
+//declare module "hero/ProductHero"
