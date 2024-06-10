@@ -55,6 +55,7 @@ const Navbar = () => {
 			<div className={styles["nav-bar_links"]}>
 				<Link to="/products">Products</Link>
 				<Link to="/cart">Cart</Link>
+				<Link to="/contact">Contact</Link>
 			</div>
 			<div className={styles["nav-bar_theme"]}>{InactiveThemeIcon()}</div>
 		</div>

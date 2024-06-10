@@ -1,10 +1,21 @@
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import { Home } from "./features/Home";
-import { lazy, Suspense } from "react";
+import React, { lazy, Suspense } from "react";
 import { Navbar } from "./features/Navbar";
+import type ProductHeroType from 'hero/ProductHero';
+import useSyncAppRouter from "./hooks/useSyncAppRouter";
 
 const Products = lazy(() => import("./features/Products/components/Products"));
 const Cart = lazy(() => import("./features/Cart/components/Cart"));
+const Contact = React.lazy(() => import("hero/Contact"));
+const Contact2 = React.lazy(() => import("hero/ProductHero"));
+
+const AppRouterHandler = () =>{
+	useSyncAppRouter({basepath: '/contact'});
+	return <Suspense>
+	<Contact />
+</Suspense>
+}
 
 const router = createBrowserRouter([
 	{
@@ -35,6 +46,10 @@ const router = createBrowserRouter([
 						<Cart />
 					</Suspense>
 				),
+			},
+			{
+				path: "/contact/*",
+				element: <AppRouterHandler />
 			},
 		],
 	},
