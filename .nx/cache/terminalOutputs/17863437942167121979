@@ -1,0 +1,8 @@
+Entrypoint [1mmain[39m[22m 4.14 KiB = [1m[32mruntime.b4ad9f1cf40fd1f4.js[39m[22m 3.99 KiB [1m[32mmain.f1a3514fd54e4ed5.js[39m[22m 152 bytes
+Entrypoint [1mstyles[39m[22m 4.65 KiB = [1m[32mruntime.b4ad9f1cf40fd1f4.js[39m[22m 3.99 KiB [1m[32mstyles.e2c2e7ee6fbfb032.css[39m[22m 574 bytes [1m[32mstyles.08f5fa031014649b.js[39m[22m 104 bytes
+chunk (runtime: runtime) [1m[32mruntime.b4ad9f1cf40fd1f4.js[39m[22m (runtime) 10.6 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32m456.2929fde37e701e12.js[39m[22m, [1m[32m456.10654e7085678108.css[39m[22m 4.07 KiB (javascript) 1.9 KiB (css/mini-extract) [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32m724.b18fafc35f7e6ff0.js[39m[22m (id hint: vendors) 389 KiB [1m[32m[rendered][39m[22m [1m[33msplit chunk (cache group: defaultVendors)[39m[22m
+chunk (runtime: runtime) [1m[32mmain.f1a3514fd54e4ed5.js[39m[22m (main) 22 bytes [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.e2c2e7ee6fbfb032.css[39m[22m, [1m[32mstyles.08f5fa031014649b.js[39m[22m (styles) 50 bytes (javascript) 784 bytes (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (da35c59de054e2b9)

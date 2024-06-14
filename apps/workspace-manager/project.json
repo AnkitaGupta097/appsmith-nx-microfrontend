@@ -1,6 +1,6 @@
 {
   "name": "workspace-manager",
-  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "apps/workspace-manager/src",
   "projectType": "application",
   "targets": {
@@ -10,7 +10,7 @@
       "defaultConfiguration": "production",
       "options": {
         "compiler": "babel",
-        "outputPath": "dist/workspace-manager",
+        "outputPath": "dist/apps/workspace-manager",
         "index": "apps/workspace-manager/src/index.html",
         "baseHref": "/",
         "main": "apps/workspace-manager/src/index.tsx",
@@ -53,7 +53,7 @@
       "options": {
         "buildTarget": "workspace-manager:build",
         "hmr": true,
-        "port": 3005
+        "port": 3002
       },
       "configurations": {
         "development": {
