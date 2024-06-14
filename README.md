@@ -12,12 +12,9 @@ To install pnpm the command is`npm i -g pnpm`
 
 To install all the dependencies `pnpm i`
 
-
-
 ## Start the app
 
 To start the development server run `nx serve mfe-monorepo`. Open your browser and navigate to http://localhost:4200/. Happy coding!
-
 
 ## Generate code
 
@@ -70,3 +67,9 @@ Nx comes with local caching already built-in (check your `nx.json`). On CI you m
 - [Join the community](https://nx.dev/community)
 - [Subscribe to the Nx Youtube Channel](https://www.youtube.com/@nxdevtools)
 - [Follow us on Twitter](https://twitter.com/nxdevtools)
+
+## PNPM Commands
+
+Run commands for multiple project
+
+> `pnpm run -r <command>`

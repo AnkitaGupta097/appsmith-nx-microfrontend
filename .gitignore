@@ -41,3 +41,5 @@ Thumbs.db
 
 file-map.json
 daemon.log
+
+*package-lock.json

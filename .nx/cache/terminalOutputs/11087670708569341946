@@ -1,0 +1,13 @@
+
+[36m>[39m [7m[1m[36m NX [39m[22m[27m [1mWeb Development Server is listening at http://localhost:3002/[22m
+
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 468 KiB (680 KiB) = [1m[32mruntime.js[39m[22m 53.7 KiB [1m[32mvendor.js[39m[22m 412 KiB [1m[32mmain.js[39m[22m 1.92 KiB 3 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 463 KiB (677 KiB) = [1m[32mruntime.js[39m[22m 53.7 KiB [1m[32mstyles.css[39m[22m 823 bytes [1m[32mstyles.js[39m[22m 409 KiB 3 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.js[39m[22m (main) 1.04 KiB [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m (runtime) 36.4 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32msrc_bootstrap_tsx.css[39m[22m, [1m[32msrc_bootstrap_tsx.js[39m[22m 16 KiB (javascript) 1.9 KiB (css/mini-extract) [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 391 KiB (javascript) 784 bytes (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 395 KiB [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+chunk (runtime: runtime) [1m[32mvendors-node_modules_pnpm_mini-css-extract-plugin_2_4_7_webpack_5_92_0__swc_core_1_3_107__swc-45e14d.js[39m[22m (id hint: vendors) 1.37 MiB [1m[32m[rendered][39m[22m [1m[33msplit chunk (cache group: defaultVendors)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (2e759fef14898d0a)
+[32mNo errors found.[39m
