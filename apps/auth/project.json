@@ -1,7 +1,7 @@
 {
-  "name": "mfe-monorepo",
-  "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/mfe-monorepo/src",
+  "name": "auth",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/auth/src",
   "projectType": "application",
   "targets": {
     "build": {
@@ -10,19 +10,16 @@
       "defaultConfiguration": "production",
       "options": {
         "compiler": "babel",
-        "outputPath": "dist/apps/mfe-monorepo",
-        "index": "apps/mfe-monorepo/src/index.html",
+        "outputPath": "dist/auth",
+        "index": "apps/auth/src/index.html",
         "baseHref": "/",
-        "main": "apps/mfe-monorepo/src/index.tsx",
-        "tsConfig": "apps/mfe-monorepo/tsconfig.app.json",
-        "assets": [
-          "apps/mfe-monorepo/src/favicon.ico",
-          "apps/mfe-monorepo/src/assets"
-        ],
-        "styles": ["apps/mfe-monorepo/src/index.css"],
+        "main": "apps/auth/src/index.tsx",
+        "tsConfig": "apps/auth/tsconfig.app.json",
+        "assets": ["apps/auth/src/favicon.ico", "apps/auth/src/assets"],
+        "styles": ["apps/auth/src/index.css"],
         "scripts": [],
         "isolatedConfig": true,
-        "webpackConfig": "apps/mfe-monorepo/webpack.config.js"
+        "webpackConfig": "apps/auth/webpack.config.js"
       },
       "configurations": {
         "development": {
@@ -34,8 +31,8 @@
         "production": {
           "fileReplacements": [
             {
-              "replace": "apps/mfe-monorepo/src/environments/environment.ts",
-              "with": "apps/mfe-monorepo/src/environments/environment.prod.ts"
+              "replace": "apps/auth/src/environments/environment.ts",
+              "with": "apps/auth/src/environments/environment.prod.ts"
             }
           ],
           "optimization": true,
@@ -48,19 +45,19 @@
       }
     },
     "serve": {
-      "executor": "@nx/react:module-federation-dev-server",
+      "executor": "@nx/webpack:dev-server",
       "defaultConfiguration": "development",
       "options": {
-        "buildTarget": "mfe-monorepo:build",
+        "buildTarget": "auth:build",
         "hmr": true,
-        "devRemotes": ["hero", "auth"]
+        "port": 3005
       },
       "configurations": {
         "development": {
-          "buildTarget": "mfe-monorepo:build:development"
+          "buildTarget": "auth:build:development"
         },
         "production": {
-          "buildTarget": "mfe-monorepo:build:production",
+          "buildTarget": "auth:build:production",
           "hmr": false
         }
       }
@@ -69,14 +66,14 @@
       "executor": "@nx/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["apps/mfe-monorepo/**/*.{ts,tsx,js,jsx}"]
+        "lintFilePatterns": ["apps/auth/**/*.{ts,tsx,js,jsx}"]
       }
     },
     "test": {
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "apps/mfe-monorepo/jest.config.ts",
+        "jestConfig": "apps/auth/jest.config.ts",
         "passWithNoTests": true
       },
       "configurations": {

@@ -3,7 +3,7 @@
  **/
 module.exports = {
     name: 'mfe-monorepo',
-    remotes:["hero"],
+    remotes:["hero", "auth"],
     shared: (name, config) => {
         return false;
       },
