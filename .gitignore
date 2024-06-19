@@ -43,3 +43,4 @@ file-map.json
 daemon.log
 
 *package-lock.json
+.nx/cache
