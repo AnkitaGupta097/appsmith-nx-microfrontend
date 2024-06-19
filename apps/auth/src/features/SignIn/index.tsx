@@ -1,8 +1,6 @@
 import React from 'react';
 import { useMutation } from '@tanstack/react-query';
 import { Credentials, LoginResponse, login } from '../../api/AuthApi';
-import { redirect } from 'react-router-dom';
-
 const LoginPage = () => {
   const { mutate, isError, error } = useMutation<
     LoginResponse,
@@ -12,7 +10,8 @@ const LoginPage = () => {
     mutationFn: (credentials) => login(credentials),
     onSuccess: async (data) => {
       if (data.success) {
-        await redirect('/');
+        // Need to figure out a better way to navigate
+        window.location.href = '/';
       }
     },
   });

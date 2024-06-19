@@ -1,5 +1,5 @@
 import React from 'react';
-import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import { Outlet, RouterProvider, createBrowserRouter } from 'react-router-dom';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import SignIn from './SignIn';
 import './Auth.css';
@@ -8,14 +8,11 @@ const queryClient = new QueryClient();
 
 const router = createBrowserRouter([
   {
-    path: '/user/login',
-    element: <SignIn />,
-  },
-  {
-    path: '/user/',
+    path: '/user',
+    element: <Outlet />,
     children: [
       {
-        index: true,
+        path: 'login',
         element: <SignIn />,
       },
     ],

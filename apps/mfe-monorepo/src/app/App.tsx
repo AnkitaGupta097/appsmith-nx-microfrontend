@@ -32,7 +32,7 @@ const AuthRouterHandler = () => {
 
 const router = createBrowserRouter([
   {
-    path: '/user/login',
+    path: '/user/*',
     element: <AuthRouterHandler />,
   },
   {
