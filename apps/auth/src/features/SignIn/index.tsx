@@ -1,24 +1,34 @@
 import React from 'react';
-import { useSearchParams } from 'react-router-dom';
-
-const createLoginUrl = () => {
-  const successRedirectUrl = '/';
-  const params = new URLSearchParams();
-  params.append('redirectUrl', successRedirectUrl);
-  const url = new URL('http://localhost:8080/api/v1/login');
-  url.search = params.toString();
-  return url.toString();
-};
+import { useMutation } from '@tanstack/react-query';
+import { Credentials, LoginResponse, login } from '../../api/AuthApi';
+import { redirect } from 'react-router-dom';
 
 const LoginPage = () => {
-  const url = createLoginUrl();
-  const [params] = useSearchParams();
-  const error = params.get('error') === 'true';
+  const { mutate, isError, error } = useMutation<
+    LoginResponse,
+    Error,
+    Credentials
+  >({
+    mutationFn: (credentials) => login(credentials),
+    onSuccess: async (data) => {
+      if (data.success) {
+        await redirect('/');
+      }
+    },
+  });
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const formData = new FormData(e.currentTarget);
+    const username = formData.get('username') as string;
+    const password = formData.get('password') as string;
+
+    mutate({ username, password });
+  };
   return (
     <div className="login-container">
       <div className="login-box">
         <h1>Sign in to your account</h1>
-        <form className="login-form" action={url} method="POST">
+        <form className="login-form" onSubmit={handleSubmit}>
           <div className="login-field">
             <label>Email</label>
             <input autoFocus name="username" placeholder="Email" type="email" />
@@ -27,11 +37,7 @@ const LoginPage = () => {
             <label>Password</label>
             <input name="password" placeholder="Password" type="password" />
           </div>
-          {error ? (
-            <span className="error">
-              Please check the entered credentials and try again.
-            </span>
-          ) : undefined}
+          {isError ? <span className="error">{error.message}</span> : undefined}
           <button>Login</button>
         </form>
       </div>
