@@ -1,0 +1,52 @@
+
+[36m>[39m [7m[1m[36m NX [39m[22m[27m [1mStarting module federation dev-server for [1mmfe-monorepo[22m[1m with 1 remotes[22m
+
+
+[36m>[39m [7m[1m[36m NX [39m[22m[27m [1mWeb Development Server is listening at http://localhost:4200/[22m
+
+
+[36m>[39m [7m[1m[36m NX [39m[22m[27m [1mWeb Development Server is listening at http://localhost:3001/[22m
+
+
+[36m>[39m [7m[1m[36m NX [39m[22m[27m [1mAll remotes started, server ready at http://localhost:4200[22m
+
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 517 KiB (684 KiB) = [1m[32mmain.js[39m[22m 1 auxiliary asset
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 511 KiB (681 KiB) = [1m[32mstyles.css[39m[22m 823 bytes [1m[32mstyles.js[39m[22m 511 KiB 2 auxiliary assets
+Entrypoint [1mhero[39m[22m [1m[33m[big][39m[22m 509 KiB (676 KiB) = [1m[32mremoteEntry.js[39m[22m 1 auxiliary asset
+chunk (runtime: hero) [1m[32mremoteEntry.js[39m[22m (hero) 48.6 KiB (runtime) 386 KiB (javascript) 168 bytes (share-init) [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 48 KiB (runtime) 396 KiB (javascript) 168 bytes (share-init) [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: hero) [1m[32mpackages_event-bus_src_index_ts-_65aa0.js[39m[22m 4 KiB [1m[32m[rendered][39m[22m
+chunk (runtime: hero, main, styles) [1m[32mpackages_event-bus_src_index_ts-_65aa1.js[39m[22m 13.3 KiB [1m[32m[rendered][39m[22m
+chunk (runtime: main) [1m[32msrc_bootstrap_tsx.js[39m[22m 2.02 KiB (javascript) 42 bytes (consume-shared) [1m[32m[rendered][39m[22m
+chunk (runtime: hero) [1m[32msrc_features_Products_components_Contact_tsx.js[39m[22m 9.67 KiB [1m[32m[rendered][39m[22m
+chunk (runtime: hero) [1m[32msrc_features_Products_components_ProductHero_tsx.css[39m[22m, [1m[32msrc_features_Products_components_ProductHero_tsx.js[39m[22m 1.2 KiB (css/mini-extract) 4.15 KiB (javascript) 42 bytes (consume-shared) [1m[32m[rendered][39m[22m
+chunk (runtime: styles) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 784 bytes (css/mini-extract) 46.9 KiB (runtime) 391 KiB (javascript) 168 bytes (share-init) [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: hero) [1m[32mvendors-node_modules_pmmmwh_react-refresh-webpack-plugin_lib_runtime_RefreshUtils_js-node_mod-aff2be.js[39m[22m (id hint: vendors) 14.5 KiB [1m[32m[rendered][39m[22m [1m[33msplit chunk (cache group: defaultVendors)[39m[22m
+chunk (runtime: hero) [1m[32mvendors-node_modules_pmmmwh_react-refresh-webpack-plugin_lib_runtime_RefreshUtils_js-node_mod-b5a891.js[39m[22m (id hint: vendors) 255 KiB [1m[32m[rendered][39m[22m [1m[33msplit chunk (cache group: defaultVendors)[39m[22m
+chunk (runtime: hero, main, styles) [1m[32mvendors-node_modules_react-dom_index_js.js[39m[22m (id hint: vendors) 1020 KiB [1m[32m[rendered][39m[22m [1m[33msplit chunk (cache group: defaultVendors)[39m[22m
+chunk (runtime: hero, main, styles) [1m[32mvendors-node_modules_react_index_js.js[39m[22m (id hint: vendors) 85.7 KiB [1m[32m[rendered][39m[22m [1m[33mreused as split chunk (cache group: defaultVendors)[39m[22m
+chunk (runtime: hero, main, styles) [1m[32mvendors-node_modules_react_jsx-dev-runtime_js.js[39m[22m (id hint: vendors) 40.4 KiB [1m[32m[rendered][39m[22m [1m[33msplit chunk (cache group: defaultVendors)[39m[22m
+chunk (runtime: hero, main, styles) [1m[32mvendors-node_modules_rxjs_dist_esm5_internal_Subject_js-node_modules_rxjs_dist_esm5_internal_-149db8.js[39m[22m (id hint: vendors) 45 KiB [1m[32m[rendered][39m[22m [1m[33msplit chunk (cache group: defaultVendors)[39m[22m
+chunk (runtime: hero, main) 42 bytes [1m[33msplit chunk (cache group: default)[39m[22m
+chunk (runtime: hero, main, styles) 42 bytes [1m[33mreused as split chunk (cache group: default)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (c98a5642f53821a0)
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 522 KiB (691 KiB) = [1m[32mmain.js[39m[22m 1 auxiliary asset
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 513 KiB (684 KiB) = [1m[32mstyles.css[39m[22m 823 bytes [1m[32mstyles.js[39m[22m 512 KiB 2 auxiliary assets
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 51.4 KiB (runtime) 396 KiB (javascript) 126 bytes (share-init) [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: main) [1m[32msrc_app_features_Cart_components_Cart_tsx.css[39m[22m, [1m[32msrc_app_features_Cart_components_Cart_tsx.js[39m[22m 138 bytes (css/mini-extract) 5.16 KiB (javascript) [1m[32m[rendered][39m[22m
+chunk (runtime: main) [1m[32msrc_bootstrap_tsx-webpack_sharing_consume_default_react-dom_react-dom.css[39m[22m, [1m[32msrc_bootstrap_tsx-webpack_sharing_consume_default_react-dom_react-dom.js[39m[22m 5.42 KiB (css/mini-extract) 51.4 KiB (javascript) 126 bytes (consume-shared) [1m[32m[rendered][39m[22m
+chunk (runtime: styles) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 784 bytes (css/mini-extract) 48.1 KiB (runtime) 391 KiB (javascript) 126 bytes (share-init) [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: main) [1m[32mvendors-node_modules_heroicons_react_20_solid_esm_MagnifyingGlassIcon_js-node_modules_heroico-939216.js[39m[22m (id hint: vendors) 305 KiB [1m[32m[rendered][39m[22m [1m[33msplit chunk (cache group: defaultVendors)[39m[22m
+chunk (runtime: main, styles) [1m[32mvendors-node_modules_react-dom_index_js.js[39m[22m (id hint: vendors) 1020 KiB [1m[32m[rendered][39m[22m [1m[33mreused as split chunk (cache group: defaultVendors)[39m[22m
+chunk (runtime: main, styles) [1m[32mvendors-node_modules_react_index_js.js[39m[22m (id hint: vendors) 85.7 KiB [1m[32m[rendered][39m[22m [1m[33mreused as split chunk (cache group: defaultVendors)[39m[22m
+chunk (runtime: main, styles) [1m[32mvendors-node_modules_react_jsx-dev-runtime_js.js[39m[22m (id hint: vendors) 40.4 KiB [1m[32m[rendered][39m[22m [1m[33mreused as split chunk (cache group: defaultVendors)[39m[22m
+chunk (runtime: main) 6 bytes (remote) 6 bytes (share-init)
+chunk (runtime: main) 6 bytes (remote) 6 bytes (share-init)
+chunk (runtime: main, styles) 42 bytes [1m[33mreused as split chunk (cache group: default)[39m[22m
+
+[1m[31mERROR[39m[22m in [1m[32mresolving fallback for shared module @mfe-monorepo/event-bus[39m[22m
+[1mModule [1m[31mnot found[39m[22m[1m: [1m[31mError[39m[22m[1m: Can't resolve '@mfe-monorepo/event-bus' in '/home/ankita/nx-webpack-microfrontend-demo/apps/mfe-monorepo/src/app/features/Home/components'[39m[22m
+
+webpack compiled with [1m[31m1 error[39m[22m (1c18c939d7d01448)
+Found [31m[1m1 error[22m[39m in 7258 ms.

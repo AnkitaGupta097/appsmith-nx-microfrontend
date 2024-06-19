@@ -9,5 +9,5 @@ chunk (runtime: runtime) [1m[32msrc_bootstrap_tsx.css[39m[22m, [1m[32msrc_
 chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 391 KiB (javascript) 784 bytes (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
 chunk (runtime: runtime) [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 395 KiB [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
 chunk (runtime: runtime) [1m[32mvendors-node_modules_pnpm_mini-css-extract-plugin_2_4_7_webpack_5_92_0__swc_core_1_3_107__swc-45e14d.js[39m[22m (id hint: vendors) 1.37 MiB [1m[32m[rendered][39m[22m [1m[33msplit chunk (cache group: defaultVendors)[39m[22m
-webpack compiled [1m[32msuccessfully[39m[22m (b64d207c461f6bcf)
+webpack compiled [1m[32msuccessfully[39m[22m (af3cd61d422c3382)
 [32mNo errors found.[39m

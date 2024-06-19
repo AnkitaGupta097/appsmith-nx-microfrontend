@@ -1,6 +1,13 @@
+import { useEffect } from "react";
 import styles from "./ProductHero.module.css";
+import { eventBus, EventTypes } from '@mfe-monorepo/event-bus';
 
 const ProductHero = () => {
+
+	useEffect(() => {
+		eventBus.publish({ type: EventTypes.USER_LOGIN, data: { userName: "Ankita" } })
+	}, []);
+
 	return (
 		<section className={styles["product-hero"]} id="product-hero">
 			<div className={styles["product-hero__wrapper"]}>
@@ -11,7 +18,7 @@ const ProductHero = () => {
 					<p
 						className={
 							styles[
-								"product-hero__wrapper__text__container__caption"
+							"product-hero__wrapper__text__container__caption"
 							]
 						}
 					>

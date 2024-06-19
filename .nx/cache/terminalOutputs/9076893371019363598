@@ -1,0 +1,62 @@
+
+[36m>[39m [7m[1m[36m NX [39m[22m[27m [1mStarting module federation dev-server for [1mmfe-monorepo[22m[1m with 1 remotes[22m
+
+[1m[33m[36m>[39m[33m [7m[1m[36m NX [39m[33m[22m[1m[27m Unable to load tsconfig-paths, workspace libraries may be inaccessible.[39m[22m
+[1m[33m  - To fix this, install tsconfig-paths with npm/yarn/pnpm[39m[22m
+[1m[33m[36m>[39m[33m [7m[1m[36m NX [39m[33m[22m[1m[27m Falling back to ts-node for local typescript execution. This may be a little slower.[39m[22m
+[1m[33m  - To fix this, ensure @swc-node/register and @swc/core have been installed[39m[22m
+[1m[33m[36m>[39m[33m [7m[1m[36m NX [39m[33m[22m[1m[27m Unable to load tsconfig-paths, workspace libraries may be inaccessible.[39m[22m
+[1m[33m  - To fix this, install tsconfig-paths with npm/yarn/pnpm[39m[22m
+[1m[33m[36m>[39m[33m [7m[1m[36m NX [39m[33m[22m[1m[27m Falling back to ts-node for local typescript execution. This may be a little slower.[39m[22m
+[1m[33m  - To fix this, ensure @swc-node/register and @swc/core have been installed[39m[22m
+<i> [1m[32m[webpack-dev-server] Project is running at:[39m[22m
+<i> [1m[32m[webpack-dev-server] Loopback: [36mhttp://localhost:3001/[39m, [36mhttp://127.0.0.1:3001/[39m[39m[22m
+<i> [1m[32m[webpack-dev-server] Content not from webpack is served from '[36m/home/ankita/nx-webpack-microfrontend-demo/dist/hero[39m' directory[39m[22m
+<i> [1m[32m[webpack-dev-server] 404s will fallback to '[36m/index.html[39m'[39m[22m
+
+[36m>[39m [7m[1m[36m NX [39m[22m[27m [1mWeb Development Server is listening at http://localhost:3001/[22m
+
+<i> [1m[32m[webpack-dev-server] Project is running at:[39m[22m
+<i> [1m[32m[webpack-dev-server] Loopback: [36mhttp://localhost:4200/[39m, [36mhttp://127.0.0.1:4200/[39m[39m[22m
+<i> [1m[32m[webpack-dev-server] 404s will fallback to '[36m/index.html[39m'[39m[22m
+
+[36m>[39m [7m[1m[36m NX [39m[22m[27m [1mWeb Development Server is listening at http://localhost:4200/[22m
+
+<i> [1m[32m[webpack-dev-middleware] wait until bundle finished: /__types_index.json[39m[22m
+<e> [1m[31m[FederatedTypesPlugin] Unable to download 'hero' remote types index file:  timeout of 2000ms exceeded[39m[22m
+
+[36m>[39m [7m[1m[36m NX [39m[22m[27m [1mAll remotes started, server ready at http://localhost:4200[22m
+
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 549 KiB (695 KiB) = [1m[32mmain.js[39m[22m 1 auxiliary asset
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 543 KiB (691 KiB) = [1m[32mstyles.css[39m[22m 823 bytes [1m[32mstyles.js[39m[22m 542 KiB 2 auxiliary assets
+Entrypoint [1mhero[39m[22m [1m[33m[big][39m[22m 540 KiB (686 KiB) = [1m[32mremoteEntry.js[39m[22m 1 auxiliary asset
+chunk (runtime: hero) [1m[32mremoteEntry.js[39m[22m (hero) 48 KiB (runtime) 386 KiB (javascript) 126 bytes (share-init) [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 48 KiB (runtime) 396 KiB (javascript) 126 bytes (share-init) [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: main) [1m[32msrc_bootstrap_tsx.js[39m[22m 2.06 KiB (javascript) 42 bytes (consume-shared) [1m[32m[rendered][39m[22m
+chunk (runtime: hero) [1m[32msrc_features_Products_components_Contact_tsx.js[39m[22m 9.82 KiB [1m[32m[rendered][39m[22m
+chunk (runtime: hero) [1m[32msrc_features_Products_components_ProductHero_tsx.css[39m[22m, [1m[32msrc_features_Products_components_ProductHero_tsx.js[39m[22m 1.2 KiB (css/mini-extract) 3.97 KiB (javascript) [1m[32m[rendered][39m[22m
+chunk (runtime: styles) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 784 bytes (css/mini-extract) 46.8 KiB (runtime) 391 KiB (javascript) 126 bytes (share-init) [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: hero) [1m[32mvendors-node_modules_pnpm_pmmmwh_react-refresh-webpack-plugin_0_5_15_react-refresh_0_10_0_typ-477e5f.js[39m[22m (id hint: vendors) 255 KiB [1m[32m[rendered][39m[22m [1m[33msplit chunk (cache group: defaultVendors)[39m[22m
+chunk (runtime: hero) [1m[32mvendors-node_modules_pnpm_pmmmwh_react-refresh-webpack-plugin_0_5_15_react-refresh_0_10_0_typ-7cace4.js[39m[22m (id hint: vendors) 14.5 KiB [1m[32m[rendered][39m[22m [1m[33msplit chunk (cache group: defaultVendors)[39m[22m
+chunk (runtime: hero, main, styles) [1m[32mvendors-node_modules_pnpm_react-dom_18_2_0_react_18_2_0_node_modules_react-dom_index_js.js[39m[22m (id hint: vendors) 1020 KiB [1m[32m[rendered][39m[22m [1m[33msplit chunk (cache group: defaultVendors)[39m[22m
+chunk (runtime: hero, main, styles) [1m[32mvendors-node_modules_pnpm_react_18_2_0_node_modules_react_index_js.js[39m[22m (id hint: vendors) 85.7 KiB [1m[32m[rendered][39m[22m [1m[33mreused as split chunk (cache group: defaultVendors)[39m[22m
+chunk (runtime: hero, main, styles) [1m[32mvendors-node_modules_pnpm_react_18_2_0_node_modules_react_jsx-dev-runtime_js.js[39m[22m (id hint: vendors) 40.4 KiB [1m[32m[rendered][39m[22m [1m[33msplit chunk (cache group: defaultVendors)[39m[22m
+chunk (runtime: hero, main) 42 bytes [1m[33msplit chunk (cache group: default)[39m[22m
+chunk (runtime: hero, main, styles) 42 bytes [1m[33mreused as split chunk (cache group: default)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (3e0ed211a72a1f92)
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 554 KiB (702 KiB) = [1m[32mmain.js[39m[22m 1 auxiliary asset
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 545 KiB (695 KiB) = [1m[32mstyles.css[39m[22m 823 bytes [1m[32mstyles.js[39m[22m 545 KiB 2 auxiliary assets
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 51.6 KiB (runtime) 396 KiB (javascript) 126 bytes (share-init) [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: main) [1m[32msrc_app_features_Cart_components_Cart_tsx.css[39m[22m, [1m[32msrc_app_features_Cart_components_Cart_tsx.js[39m[22m 138 bytes (css/mini-extract) 5.3 KiB (javascript) [1m[32m[rendered][39m[22m
+chunk (runtime: main) [1m[32msrc_bootstrap_tsx-webpack_sharing_consume_default_react-dom_react-dom.css[39m[22m, [1m[32msrc_bootstrap_tsx-webpack_sharing_consume_default_react-dom_react-dom.js[39m[22m 5.42 KiB (css/mini-extract) 52.5 KiB (javascript) 84 bytes (consume-shared) [1m[32m[rendered][39m[22m
+chunk (runtime: styles) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 784 bytes (css/mini-extract) 48.4 KiB (runtime) 391 KiB (javascript) 126 bytes (share-init) [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: main) [1m[32mvendors-node_modules_pnpm_heroicons_react_2_0_18_react_18_2_0_node_modules_heroicons_react_20-8a60de.js[39m[22m (id hint: vendors) 305 KiB [1m[32m[rendered][39m[22m [1m[33msplit chunk (cache group: defaultVendors)[39m[22m
+chunk (runtime: main, styles) [1m[32mvendors-node_modules_pnpm_react-dom_18_2_0_react_18_2_0_node_modules_react-dom_index_js.js[39m[22m (id hint: vendors) 1020 KiB [1m[32m[rendered][39m[22m [1m[33mreused as split chunk (cache group: defaultVendors)[39m[22m
+chunk (runtime: main, styles) [1m[32mvendors-node_modules_pnpm_react_18_2_0_node_modules_react_index_js.js[39m[22m (id hint: vendors) 85.7 KiB [1m[32m[rendered][39m[22m [1m[33mreused as split chunk (cache group: defaultVendors)[39m[22m
+chunk (runtime: main, styles) [1m[32mvendors-node_modules_pnpm_react_18_2_0_node_modules_react_jsx-dev-runtime_js.js[39m[22m (id hint: vendors) 40.4 KiB [1m[32m[rendered][39m[22m [1m[33mreused as split chunk (cache group: defaultVendors)[39m[22m
+chunk (runtime: main) 6 bytes (remote) 6 bytes (share-init)
+chunk (runtime: main) 6 bytes (remote) 6 bytes (share-init)
+chunk (runtime: main, styles) 42 bytes [1m[33mreused as split chunk (cache group: default)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (f72d9bbab49be9a1)
+[32mNo errors found.[39m
