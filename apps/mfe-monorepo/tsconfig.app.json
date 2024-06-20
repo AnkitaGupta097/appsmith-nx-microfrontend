@@ -4,13 +4,17 @@
     "outDir": "../../dist/out-tsc",
     "types": [
       "node",
-
       "@nx/react/typings/cssmodule.d.ts",
       "@nx/react/typings/image.d.ts"
     ],
     "paths": {
-      "*": ["apps/mfe-monorepo/@mf-types/*"]
-    }
+      "*": [
+        "apps/mfe-monorepo/@mf-types/*"
+      ],
+      "@mfe-monorepo/event-bus": [
+        "packages/event-bus/src/index.ts"
+      ]
+    },
   },
   "exclude": [
     "jest.config.ts",
@@ -23,5 +27,10 @@
     "src/**/*.spec.jsx",
     "src/**/*.test.jsx"
   ],
-  "include": ["src/**/*.js", "src/**/*.jsx", "src/**/*.ts", "src/**/*.tsx"]
+  "include": [
+    "src/**/*.js",
+    "src/**/*.jsx",
+    "src/**/*.ts",
+    "src/**/*.tsx"
+  ]
 }
