@@ -1,7 +1,7 @@
 const { composePlugins, withNx } = require('@nx/webpack');
 const { withReact } = require('@nx/react');
 const { withModuleFederation } = require('@nx/react/module-federation');
-const moduleFederationConfig =require('./module-federation.config');
+const moduleFederationConfig = require('./module-federation.config');
 const { FederatedTypesPlugin } = require('@module-federation/typescript');
 //const pathBrowserify = require.resolve('path-browserify')
 
@@ -9,7 +9,7 @@ const { FederatedTypesPlugin } = require('@module-federation/typescript');
 module.exports = composePlugins(
   withNx(),
   withReact(),
-  withModuleFederation({...moduleFederationConfig}),
+  withModuleFederation({ ...moduleFederationConfig }),
   (config) => {
     // Update the webpack config as needed here.
     // e.g. `config.plugins.push(new MyPlugin())`
@@ -18,11 +18,12 @@ module.exports = composePlugins(
     //config.ignoreWarnings=[/Failed to parse source map/]
     config.plugins.push(
       new FederatedTypesPlugin({
-        federationConfig : {
+        federationConfig: {
           ...moduleFederationConfig,
           filename: 'remoteEntry.js',
           remotes: {
-            hero: 'hero@http://localhost:3001/remoteEntry.js'
+            hero: 'hero@http://localhost:3001/remoteEntry.js',
+            'temp-mf': 'temp-mf@http://localhost:3002/remoteEntry.js'
           }
         }
       })
@@ -30,9 +31,9 @@ module.exports = composePlugins(
 
     config.resolve.fallback = {
       ...config.resolve.fallback,
-      path:false,
+      path: false,
     };
-    config.ignoreWarnings=[/Failed to parse source map/]
+    config.ignoreWarnings = [/Failed to parse source map/]
     return config;
   }
 );

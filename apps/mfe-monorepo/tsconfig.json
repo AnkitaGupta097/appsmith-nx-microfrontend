@@ -6,7 +6,12 @@
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "paths": {
-      "*": ["apps/mfe-monorepo/@mf-types/*"]
+      "@mfe-monorepo/event-bus": [
+        "packages/event-bus/src/index.ts"
+      ],
+      "*": [
+        "apps/mfe-monorepo/@mf-types/*"
+      ]
     }
   },
   "files": [],

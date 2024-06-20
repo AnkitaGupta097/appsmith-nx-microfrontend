@@ -2,8 +2,10 @@
  * @type {import('@nrwl/devkit').ModuleFederationConfig}
  **/
 module.exports = {
-  name: 'mfe-monorepo',
-  remotes: ["hero", "auth", "temp-mf"],
+  name: 'temp-mf',
+  exposes: {
+    './App': './src/app/app.tsx',
+  },
   shared: (name, config) => {
     return false;
   },
@@ -31,8 +33,7 @@ module.exports = {
         singleton: true,
         requiredVersion: '18.2.0'
       }
-    },
-    {
+    }, {
       libraryName: '@mfe-monorepo/event-bus',
       sharedConfig: {
         eager: false,

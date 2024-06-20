@@ -36,12 +36,11 @@ class EventBus {
   }
 
   // Subscribe to events of a certain type
-  on<EventI>(eventType: EventTypes): Observable<EventI> { 
-    return this.events.asObservable()
-      .pipe(
-        filter((event) => event.type === eventType),
-        map((event) => event.data)
-      );
+  on<EventI>(eventType: EventTypes): Observable<EventI> {
+    return this.events.pipe(
+      filter((event) => event.type === eventType),
+      map((event) => event.data)
+    );
   }
 }
 

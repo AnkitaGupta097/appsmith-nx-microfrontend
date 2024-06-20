@@ -17,25 +17,43 @@ const ProductHero = React.lazy(() =>
 	})
 );
 
+const App = React.lazy(() =>
+	importRemote<any>({
+		url: async () => Promise.resolve('http://localhost:3002'),
+		scope: 'temp-mf',
+		module: './App',
+		remoteEntryFileName: 'remoteEntry.js',
+		esm: true,
+	})
+);
+
 //const ProductHero = React.lazy(() => import("hero/ProductHero"));
 
 const bodyElement = document.querySelector("body")!;
 
-useEffect(() => {
-	// Subscribe to an event
-	const subscription = eventBus.on<string>(EventTypes.USER_LOGIN)
-		.subscribe((data: any) => {
-			// Perform actions in response to the event
-			console.log("event listened in home", data)
-		});
-
-	return () => {
-		// Clean up subscriptions
-		subscription.unsubscribe();
-	};
-}, []);
 
 const Home = () => {
+
+
+	useEffect(() => {
+		// Subscribe to an event
+		const subscription = eventBus.on<string>(EventTypes.USER_LOGIN)
+			.subscribe((data: any) => {
+				// Perform actions in response to the event
+				console.log("event listened in home", data)
+			});
+
+		const subscription1 = eventBus.subscribe((data: any) => {
+			// Perform actions in response to the event
+			console.log("event listened in home all events", data)
+		});
+
+		return () => {
+			// Clean up subscriptions
+			subscription.unsubscribe();
+		};
+	}, []);
+
 	const { isSmallScreen } = useScreenSize({
 		htmlElement: bodyElement,
 	});
@@ -43,6 +61,7 @@ const Home = () => {
 	return (
 		<section className={styles["home"]}>
 			<Suspense>{!isSmallScreen && <ProductHero />}</Suspense>
+			<Suspense>{!isSmallScreen && <App />}</Suspense >
 			<ProductsOnSale />
 		</section>
 	);
