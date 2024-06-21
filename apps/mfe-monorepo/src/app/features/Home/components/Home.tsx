@@ -6,6 +6,7 @@ import React from "react";
 import { importRemote } from '@module-federation/utilities';
 import type ProductHeroType from 'hero/ProductHero';
 import { eventBus, EventTypes } from '@mfe-monorepo/event-bus';
+import { tinyemitter }   from '@mfe-monorepo/event-bus';
 
 const ProductHero = React.lazy(() =>
 	importRemote<{ default: typeof ProductHeroType }>({
@@ -34,7 +35,7 @@ const bodyElement = document.querySelector("body")!;
 
 const Home = () => {
 
-
+	tinyemitter.on('navigateTo', (value: string)=> { console.log("Navigated *** ", value)});
 	useEffect(() => {
 		window.dispatchEvent(new CustomEvent('home' , {detail : "from home to contact"}));
         const shellNavigated = ({detail}: any)=>{

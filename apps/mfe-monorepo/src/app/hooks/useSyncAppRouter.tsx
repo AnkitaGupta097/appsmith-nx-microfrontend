@@ -37,7 +37,7 @@ const useSyncAppRouter = ({basepath} : {basepath: string}) => {
     }, [location, basepath])
 
     useEffect(() => {
-
+        
 		window.dispatchEvent(new CustomEvent('home' , {detail : "from home to contact"}));
 
         const shellNavigated = ({detail}: any)=>{
@@ -46,7 +46,8 @@ const useSyncAppRouter = ({basepath} : {basepath: string}) => {
 
         window.addEventListener('contact', shellNavigated as EventListener);
 		//eventBus.publish({ type: EventTypes.USER_LOGOUT, data: { userName: "Jai" } })
-
+        // below line commited to portrait route navigation can be achieved using events, it can be deleted if not required
+        navigate('/contact/form');
 		return () => {
 			window.removeEventListener('contact', shellNavigated as EventListener);
 		};
