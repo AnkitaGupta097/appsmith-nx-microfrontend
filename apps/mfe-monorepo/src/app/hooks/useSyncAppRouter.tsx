@@ -35,6 +35,22 @@ const useSyncAppRouter = ({basepath} : {basepath: string}) => {
             );
         }
     }, [location, basepath])
+
+    useEffect(() => {
+
+		window.dispatchEvent(new CustomEvent('home' , {detail : "from home to contact"}));
+
+        const shellNavigated = ({detail}: any)=>{
+            console.log(" From contact ", detail)
+        };
+
+        window.addEventListener('contact', shellNavigated as EventListener);
+		//eventBus.publish({ type: EventTypes.USER_LOGOUT, data: { userName: "Jai" } })
+
+		return () => {
+			window.removeEventListener('contact', shellNavigated as EventListener);
+		};
+	}, []);
 };
 
 export default useSyncAppRouter;

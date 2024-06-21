@@ -36,6 +36,12 @@ const Home = () => {
 
 
 	useEffect(() => {
+		window.dispatchEvent(new CustomEvent('home' , {detail : "from home to contact"}));
+        const shellNavigated = ({detail}: any)=>{
+            console.log(" From contact ", detail)
+        };
+
+        window.addEventListener('contact', shellNavigated as EventListener);
 		// Subscribe to an event
 		const subscription = eventBus.on<string>(EventTypes.USER_LOGIN)
 			.subscribe((data: any) => {
@@ -46,6 +52,7 @@ const Home = () => {
 		return () => {
 			// Clean up subscriptions
 			subscription.unsubscribe();
+			window.removeEventListener('contact', shellNavigated as EventListener);
 		};
 	}, []);
 

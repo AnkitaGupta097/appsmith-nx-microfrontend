@@ -26,6 +26,21 @@ const useSyncGlobalRouter = ({basename} : {basename: string}) => {
             window.removeEventListener('shell', shellNavigated as EventListener);
         };
     }, [location]);
+
+    useEffect(()=>{
+        
+        window.dispatchEvent(new CustomEvent('contact' , {detail : "from Contact to Home"}));
+
+        const shellNavigated = ({detail}: any)=>{
+            console.log(" From Home ", detail)
+        };
+
+        window.addEventListener('home', shellNavigated as EventListener);
+
+        return () => {
+            window.removeEventListener('home', shellNavigated as EventListener);
+        };
+    }, []);
 };
 
 export default useSyncGlobalRouter;

@@ -4,7 +4,7 @@ import ContactChat from './ContactChat';
 import ContactForm from './ContactForm';
 import styles from "./ProductHero.module.css";
 
-const ContactInfo =() => {
+const ContactInfo =() => { 
   return (<div>contact
     <div>
         <Link to="form">Contact Form</Link>
