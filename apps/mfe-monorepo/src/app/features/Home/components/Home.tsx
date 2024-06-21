@@ -43,11 +43,6 @@ const Home = () => {
 				console.log("event listened in home", data)
 			});
 
-		const subscription1 = eventBus.subscribe((data: any) => {
-			// Perform actions in response to the event
-			console.log("event listened in home all events", data)
-		});
-
 		return () => {
 			// Clean up subscriptions
 			subscription.unsubscribe();
