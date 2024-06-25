@@ -7,7 +7,6 @@ import { tinyemitter }   from '@mfe-monorepo/event-bus';
 const ProductHero = () => {
 	
 	useEffect(() => {
-		tinyemitter.emit('navigateTo', "emitted from mfe-monorepo");
 		const subscription = eventBus.subscribe((data: any) => {
 			// Perform actions in response to the event
 			console.log("event listened in hero-mf", data)
